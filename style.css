@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+}
+header {
+    border-bottom: 2px solid #0a97f6; /* Línea inferior */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Color oscuro pero transparente */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mostrar elementos del menú en línea */
+}
+
+nav ul li {
+    margin-left: 10px; /* Espacio entre elementos del menú */
+
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Eliminar el margen izquierdo del primer elemento del menú */
+    margin-right: 0;
+}
+
+.boton-menu {
+    color: #fff; /* Color del texto */
+    font-size: 16px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.boton-menu:hover {
+    color: #0a97f6; /* Color del texto al pasar el cursor */
+}
+
+.nombre {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; /* Color del nombre */
+    margin-left: 10px;
+}
+
+.correo {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #20dcdc; /* Color del correo */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cloud {
+    background-color: #f0f0f0; /* Color pastel de fondo */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 36px;
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    text-align: center;
+}
+
+.profile-picture {
+    float: left; /* Para alinear la foto a la izquierda */
+    margin-right: 20px; /* Margen derecho para separar la foto del texto */
+}
+
+.profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cloud:after {
+    clear: both; /* Limpiar el flotamiento */
+    content: "";
+    display: table;
+}
+#habilidades {
+    background-color: #007bff; /* Color de fondo azul */
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto dentro de la sección */
+}
+
+.habilidades {
+    display: flex; /* Alineación horizontal */
+    flex-wrap: wrap; /* Permitir que las habilidades se envuelvan en varias líneas */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.habilidad {
+    border: 2px solid #ffffff; /* Borde blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    margin: 10px; /* Espacio entre habilidades */
+    text-align: center;
+    transition: all 0.3s ease; /* Efecto de transición al hacer clic */
+}
+
+.habilidad:hover {
+    background-color: #e5e5e5; /* Cambio de color de fondo al pasar el mouse */
+    cursor: pointer; /* Cursor de la mano al pasar el mouse */
+}
+
+.habilidad img {
+    width: 100px;
+    height: 100px;
+}
+
+.habilidad p {
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrado horizontal */
+}
+h2 {
+    text-align: center; /* Centrar el texto */
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrado horizontal */
+}
+#pasatiempos {
+    background-color: #5ac997; /* Color de fondo suave */
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.pasatiempos {
+    display: flex; /* Alineación horizontal */
+    justify-content: space-around; /* Espacio entre los elementos */
+}
+.pasatiempo.clicked {
+    transform: rotate(180deg); /* Rotar 180 grados al hacer clic */
+}
+.pasatiempo {
+    border: 2px solid #f2efef; /* Borde */
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease; /* Efecto de transición al hacer clic */
+}
+
+
+.pasatiempo img {
+    width: 100px;
+    height: 100px;
+}
+
+.pasatiempo p {
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrado horizontal */
+}
+#formacion-academica {
+    background-color: #602aab; /* Color de fondo suave */
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.formacion {
+    display: flex; /* Alineación horizontal */
+    justify-content: space-around; /* Espacio entre los elementos */
+}
+
+.institucion {
+    border: 2px solid #f8f2f2; /* Borde */
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease; /* Efecto de transición al hacer clic */
+}
+
+.institucion img {
+    width: 100px;
+    height: 100px;
+}
+
+.institucion p {
+    margin-top: 10px;
+}
+#experiencia {
+    background-color: #333; /* Color de fondo oscuro */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#experiencia h2 {
+    color: #fff; /* Color del texto blanco */
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.experiencia-item img {
+    width: 250px; 
+    height: auto; 
+    margin: 0 auto; 
+    display: block; 
+    transition: transform 0.3s; /* Agregar transición para suavizar el cambio de tamaño */
+}
+
+.experiencia-item img:hover {
+    transform: scale(2.2); /* Aumentar el tamaño al pasar el mouse */
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.experiencia-item {
+    width: 550px;
+    background-color: #555; /* Color de fondo oscuro más claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: width 0.3s, height 0.3s; /* Agregar transición para suavizar el cambio de tamaño */
+}
+
+.experiencia-item h3 {
+    color: #fff; /* Color del texto blanco */
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.botones button {
+    background-color: #0a97f6; /* Color de botón azul */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: #086f9e; /* Cambio de color al pasar el mouse */
+}
+
+#contacto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #333;
+}
+
+#contacto form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #666;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contacto textarea {
+    resize: vertical;
+}
+
+#contacto input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contacto input[type="submit"]:hover {
+    background-color: #45a049;
+}
+footer {
+   text-align: center;
+   background-color: #333;
+ color: #fff;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 10px; /* Ajustar el padding del header */
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        align-items: center; /* Centrar elementos en el eje vertical */
+    }
+
+    .nombre {
+        margin: 0; /* Eliminar el margen izquierdo */
+        margin-bottom: 10px; /* Agregar margen inferior para separar del menú */
+        font-size: 18px; /* Reducir el tamaño del nombre */
+        text-align: center; /* Centrar el texto */
+    }
+
+    nav {
+        margin-bottom: 10px; /* Agregar margen inferior para separar del correo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        align-items: center; /* Centrar elementos en el eje horizontal */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Ajustar el margen vertical */
+    }
+
+    .correo {
+        margin: 0; /* Eliminar el margen izquierdo y derecho */
+        font-size: 12px; /* Reducir el tamaño del correo */
+        text-align: center; /* Centrar el texto */
+    }
+}
